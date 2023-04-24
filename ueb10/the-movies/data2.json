@@ -1,0 +1,67 @@
+{
+    "movies": [{
+        "id": "",
+        "title": "",
+        "release": 0,
+        "runtime": 0,
+        "cast": [ "" ],
+        "genres": [ "" ],
+        "extract": "",
+        "thumbnail": { "file": "", "width": 0, "height": 0 }
+    }],
+    "accounts": [{
+        "id": "",
+        "name": "",
+        "mail": "",
+        "password_hash": "",
+        "payment": {
+            "type": "",
+            "paypal_mail": "",
+            "credit_card": { "owner": "", "number": "", "valid": "", "cvc": "" }
+        },
+        "profiles": [{
+            "id": "",
+            "name": "",
+            "picture": "",
+            "statistics": {
+                "total_watchtime": 0,
+                "watchtime_by_genre": [
+                    {
+                        "genre" : "",
+                        "watchtime" : 0
+                    }
+                ],
+                "liked": [ "" ],
+                "likes_by_genre": [
+                    {
+                        "genre" : "",
+                        "likes" : 0
+                    }
+                ]
+            },
+            "history": [{ "id": "film_id", "last_timestamp": 0 }],
+            "bookmarks": [ "film_id" ]
+        }]
+    }],
+    "statistics": {
+        "average_watchtime": 0,
+        "median_watchtime": 0,
+        "averages_by_genre": [
+            {
+                "genre" : "",
+                "average" : 0,
+                "median" : 0
+            }
+        ],
+        "likes": [
+            {
+                "film_id" : "",
+                "likes" : 0
+            }
+        ]
+    },
+    "info": {
+        "company_name": "",
+        "contact": { "address": "", "mail": "", "phone": "" }
+    }
+}
