@@ -20,8 +20,31 @@
             "credit_card": { "owner": "", "number": "", "valid": "", "cvc": "" }
         },
         "profiles": [{
-            "id": "",
-            "name": "",
+            "id": "1",
+            "name": "Hans",
+            "picture": "",
+            "statistics": {
+                "total_watchtime": 0,
+                "watchtime_by_genre": [
+                    {
+                        "genre" : "",
+                        "watchtime" : 0
+                    }
+                ],
+                "liked": [ "" ],
+                "likes_by_genre": [
+                    {
+                        "genre" : "",
+                        "likes" : 0
+                    }
+                ]
+            },
+            "history": [{ "id": "film_id", "last_timestamp": 0 }],
+            "bookmarks": [ "film_id" ]
+        },
+        {
+            "id": "0",
+            "name": "Otto",
             "picture": "",
             "statistics": {
                 "total_watchtime": 0,
@@ -55,8 +78,8 @@
         ],
         "likes": [
             {
-                "film_id" : "",
-                "likes" : 0
+                "film_id" : "Hans und der Otto",
+                "likes" : 69
             }
         ]
     },
