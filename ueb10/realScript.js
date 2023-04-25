@@ -34,9 +34,11 @@ function extractProfiles(accs) {
 function makeGenreList(movies) {
     let genres = [];
     for (let i = 0; i < movies.length; i++) {
-        if (!genres.includes(movies[i].genres[0])) {
-            genres.push(movies[i].genres[0]);
-        }
+    		for (let j = 0; j < movies[i].genres.length) {
+        		if (!genres.includes(movies[i].genres[j])) {
+            		genres.push(movies[i].genres[j]);
+        		}
+    		}
     }
     return genres;
 }
