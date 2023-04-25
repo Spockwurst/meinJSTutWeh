@@ -1,4 +1,20 @@
-const sc = require('./script.js');
+const sc = require('fs');
+
+//datenbank als Objekt mit Funktionen
+let dataB = function(dataSource) {
+  this.data = readFile(dataSource);
+  this.getObj = function(id, list) {
+    return list !== undefined ? list.filter(e => e.id === id) : undefined;
+  }
+}
+
+
+function readFile(pathToFile) {
+  return JSON.parse(
+    fs.readFileSync(pathToFile, { encoding: 'utf8' })
+  );
+};
+
 // a)
 let data = sc.readFile('./data.json');
 let data2 = sc.readFile('./data2.json');
